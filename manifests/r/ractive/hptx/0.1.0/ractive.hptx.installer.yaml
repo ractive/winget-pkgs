@@ -1,0 +1,23 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ractive.hptx
+PackageVersion: 0.1.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: hptx.exe
+  PortableCommandAlias: hptx
+InstallModes:
+- silent
+UpgradeBehavior: install
+ReleaseDate: 2026-10-07
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/ractive/hptx/releases/download/v0.1.0/hptx-v0.1.0-x86_64-pc-windows-msvc.zip
+  InstallerSha256: D83147FB5D720A4CFB49861548831F9F7606C5AD3A48723C8CAA6064B89054E6
+- Architecture: arm64
+  InstallerUrl: https://github.com/ractive/hptx/releases/download/v0.1.0/hptx-v0.1.0-aarch64-pc-windows-msvc.zip
+  InstallerSha256: 6E79ADC9FF6D3DFE8F1E5169566F2E1C7A4CB691A7C0D913E4EADB046FADBEFE
+ManifestType: installer
+ManifestVersion: 1.12.0
